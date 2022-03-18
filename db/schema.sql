@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS techite_db;
+
+CREATE DATABASE techite_db;
