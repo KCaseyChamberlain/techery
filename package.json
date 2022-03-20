@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KCaseyChamberlain/techery.git"
+    "url": "git+https://github.com/KCaseyChamberlain/techite.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KCaseyChamberlain/techery/issues"
+    "url": "https://github.com/KCaseyChamberlain/techite/issues"
   },
-  "homepage": "https://github.com/KCaseyChamberlain/techery#readme",
+  "homepage": "https://github.com/KCaseyChamberlain/techite#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
