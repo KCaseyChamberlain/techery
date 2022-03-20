@@ -42,6 +42,17 @@ button:hover {
   padding: 0;
 }
 
+.meta{
+  color: #964e5f;
+}
+
+.upvote_count{
+  color: #5cd3c2;
+  text-shadow: 2px 2px green;
+  font-weight: bolder;
+  
+}
+
 textarea, input {
   padding: .5%;
   border-radius: 5px;
@@ -82,10 +93,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-color: #3d222e;
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 2.5em;
+}
+
+.title a {
+  border-bottom: #e84d92 solid;
 }
 
 main {
@@ -172,6 +188,11 @@ main {
   margin-bottom: 5%;
 }
 
+.post-content{
+  color:#7db1cd;
+  padding-left: 5px;
+}
+
 footer {
   border-top: 1px solid black;
   display: flex;
@@ -179,4 +200,5 @@ footer {
   padding: 1%;
   font-size: 110%;
   color: #f542d4;
+  background-color: #3d222e;
 }
