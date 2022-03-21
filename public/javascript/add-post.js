@@ -1,6 +1,6 @@
 async function newFormHandler(event) {
   event.preventDefault();
-  
+
   const title = document.querySelector('input[name="post-title"]').value;
   const post_content = document.querySelector('textarea[name="post-content"]').value;
 
@@ -16,6 +16,7 @@ async function newFormHandler(event) {
   });
 
   if (response.ok) {
+    // redirects url to dashboard
     document.location.replace('/dashboard');
   } else {
     alert(response.statusText);

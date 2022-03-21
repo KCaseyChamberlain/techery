@@ -5,6 +5,7 @@ async function logout() {
   });
 
   if (response.ok) {
+    // redirects url to default route
     document.location.replace('/');
   } else {
     alert(response.statusText);

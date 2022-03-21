@@ -1,4 +1,4 @@
-## Techite
+# Techite
 
 ### Description
 This full stack web application is a CMS-style blog that is hosted live by Heroku. It utilizes some popular packages that include bcrypt, express, mysql2, express-handlebars, express-session, and more!

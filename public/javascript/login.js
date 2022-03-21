@@ -15,6 +15,7 @@ async function loginFormHandler(event) {
     });
 
     if (response.ok) {
+      // redirects url to dashboard
       document.location.replace('/dashboard/');
     } else {
       alert(response.statusText);
@@ -41,6 +42,7 @@ async function signupFormHandler(event) {
     });
 
     if (response.ok) {
+      // redirects url to dashboard
       document.location.replace('/dashboard/');
     } else {
       alert(response.statusText);

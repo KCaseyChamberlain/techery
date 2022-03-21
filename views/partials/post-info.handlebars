@@ -1,9 +1,10 @@
 <article class="post">
   <div class="title">
-  <a href="/post/{{id}}">{{title}}</a>
+    <a href="/post/{{id}}">{{title}}</a>
   </div>
 
   <div class="meta">
+    {{!-- uses helper to format "upvote" to plural form if needed --}}
     {{vote_count}} {{format_plural "upvote" vote_count}}, Created by: {{user.username}} on {{format_date created_at}}
     |
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>

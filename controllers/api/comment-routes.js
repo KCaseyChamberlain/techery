@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+// gets all comments
 router.get('/', (req, res) => {
   Comment.findAll()
     .then(dbCommentData => res.json(dbCommentData))
@@ -12,7 +13,7 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-  // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
+  // posts comment only if the user is logged in
   Comment.create({
     comment_text: req.body.comment_text,
     user_id: req.session.user_id,
@@ -26,6 +27,7 @@ router.post('/', withAuth, (req, res) => {
 });
 
 router.delete('/:id', withAuth, (req, res) => {
+  // deletes comment only if user is logged in / withAuth
   Comment.destroy({
     where: {
       id: req.params.id

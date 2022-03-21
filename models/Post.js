@@ -33,7 +33,7 @@ class Post extends Model {
   }
 }
 
-// create fields/columns for Post model
+// Post model columns
 Post.init(
   {
     id: {
