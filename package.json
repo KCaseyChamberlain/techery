@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "seeds": "node seeds/index.js",
-    "deploy": "gh-pages -d build"
-  },
+    "seeds": "node seeds/index.js"  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KCaseyChamberlain/techite.git"
@@ -28,6 +26,5 @@
     "express-session": "^1.17.2",
     "mysql2": "^2.3.3",
     "sequelize": "^6.17.0"
-  },
-  "devDependencies": {"gh-pages":"^4.0.0"}
+  }
 }
